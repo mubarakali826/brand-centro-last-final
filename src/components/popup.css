@@ -1,0 +1,77 @@
+.popup {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  transform: translate(-50%, -50%) scale(0.95);
+  padding: 16px;
+  background: #fff; /* Solid white background */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 220px; /* Fixed width for content alignment */
+  z-index: 9999; /* Ensure it stays above all elements */
+  color: #333; /* Text color for good contrast */
+  font-family: Arial, sans-serif; /* Consistent font */
+}
+
+.popup.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup.hide {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, -50%) scale(0.95);
+}
+
+.popup h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 8px 0;
+  background-color: #000; /* Black background for the badge */
+  color: #fff; /* White text */
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.popup p {
+  font-size: 0.9rem;
+  margin: 6px 0;
+  color: #555; /* Slightly lighter text color for secondary info */
+}
+
+.popup .info-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+.popup .info-row span {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.popup .info-row span i {
+  font-size: 1.2rem;
+  color: #777; /* Icon color */
+}
+
+.popup .sold-btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: #ddd; /* Gray background */
+  color: #999; /* Light gray text */
+  border-radius: 8px;
+  border: none;
+  cursor: not-allowed;
+  margin-top: 12px;
+}
